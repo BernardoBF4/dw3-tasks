@@ -1,0 +1,133 @@
+Capítulo 2:
+
+//1
+
+class MeuPrograma {
+ public static void main(String[] args) {
+ 
+ System.out.println("Meu Eclipse não funciona, por isso eu usei um compilador online");
+ 
+ }
+}
+
+//2
+
+class MeuPrograma {
+ public static void main(String[] args) {
+ 
+ System.out.println("Meu Eclipse não funciona, por isso eu usei um compilador online");
+ System.out.println("Quero chorar");
+ 
+ }
+}
+
+//3
+
+class MeuPrograma {
+ public static void main(String[] args) {
+ 
+ System.out.println("Meu Eclipse não funciona, por isso eu usei um compilador online \nQuero chorar muitooooo");
+ 
+ }
+}
+
+Capítulo 3: Variáveis e tipos primitivos
+
+//1 - a, b, c e d
+
+class BalancoTrimestral {
+ public static void main(String[] args) {
+  
+  int gastosJaneiro = 15000;
+  int gastosFevereiro = 23000;
+  int gastosMarco = 17000;
+  int gastosTrimestre = gastosJaneiro + gastosFevereiro + gastosMarco;
+
+  System.out.println(gastosTrimestre);
+
+ }
+}
+
+//2 
+
+class BalancoTrimestral {
+ public static void main(String[] args) {
+  
+  int gastosJaneiro = 15000;
+  int gastosFevereiro = 23000;
+  int gastosMarco = 17000;
+  int gastosTrimestre = gastosJaneiro + gastosFevereiro + gastosMarco;
+
+  System.out.println(gastosTrimestre);
+  
+  double mediaMensal = gastosTrimestre / 3.0;
+
+  System.out.println("Valor da média mensal = " + mediaMensal);
+
+ }
+}
+
+Capítulo 3:
+
+//1
+
+class Exercicios {
+ public static void main(String[] args) {
+  
+  for (int i = 150; i <= 300; i += 1) {
+    System.out.println(i); 
+  }
+  
+ }
+}
+
+//2
+
+class Exercicios {
+ public static void main(String[] args) {
+  
+  int cont = 0;
+  for (int i = 0; i <= 1000; i += 1) {
+     cont += i;
+  }
+  
+  System.out.println(cont);
+  
+ }
+}
+
+//3
+
+class Exercicios {
+ public static void main(String[] args) {
+  
+  for (double i = 0; i <= 100; i += 1) {
+     if (i % 3 == 0) {
+        System.out.println(i);
+     }
+  }
+  
+ }
+}
+
+//4
+
+class Exercicios {
+ public static void main(String[] args) {
+  
+  int fatorial = 1;
+  for (int n = 1; n <= 10; n++) {
+   fatorial *= n;  
+  }
+  
+  System.out.println(fatorial);
+  
+ }
+}
+
+//5
+
+O problema está no quanto que o tipo "int" pode suportar em termos de valor. Ele aguenta de -2.147.483.648 até 2.147.483.647, e o fatorial de 13 já é um número que 
+passa do limite do "int". Dessa forma, temos que usar o long para este caso, porém esse aguenta somente até 20!.
+
+
