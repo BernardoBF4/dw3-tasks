@@ -128,6 +128,82 @@ class Exercicios {
 //5
 
 O problema está no quanto que o tipo "int" pode suportar em termos de valor. Ele aguenta de -2.147.483.648 até 2.147.483.647, e o fatorial de 13 já é um número que 
-passa do limite do "int". Dessa forma, temos que usar o long para este caso, porém esse aguenta somente até 20!.
+passa do limite do "int". Dessa forma, temos que usar o long para este caso. Porém esse aguenta somente até 20!.
 
 
+//6 
+
+class Exercicios {
+ public static void main(String[] args) {
+  
+  int n1 = 0, n2 = 1, fibonacci= 0;  
+  
+  while (fibonacci<= 100){
+     	System.out.println(fibonacci);
+  
+  	fibonacci = n1 + n2;
+  	n1 = n2;
+  	n2 = fibonacci;
+  
+  }
+    
+ }
+}
+
+//7
+
+class Exercicios {
+ public static void main(String[] args) {
+  
+  int x = 20;
+  
+  while (x > 1) {
+  
+	  if (x % 2 == 0) {
+	  	x /= 2;
+	  } else if (x % 2 != 0) {
+	  	x = 3 * x + 1;
+	  }
+	  
+	  System.out.print( " -> " + x);
+  
+  }
+      
+ }
+}
+
+//8
+
+class Exercicios {
+ public static void main(String[] args) {
+  
+  int t = 5;
+  
+  for (int n = 1; n <= t; n++) {
+  	for (int m = 1; m <= n; m++) {
+  		System.out.print(" -> " + m*n);
+  	}
+  	
+  	System.out.println(" ");
+  }
+      
+ }
+}
+
+//Desafio
+
+class Exercicios {
+ public static void main(String[] args) {
+  
+  int n1 = 0, n2 = 1;  
+  
+  while (n1 + n2 <= 100){
+     	System.out.println(n1 + n2);
+  
+    	n2 = n1 + n2;
+  	n1 = n2 - n1;
+  
+  }
+    
+ }
+}
